@@ -4,17 +4,22 @@ APE=/sys/src/ape
 LIB=/$objtype/lib/ape/libbsd.a
 OFILES=\
 	accept.$O\
+	arc4random.$O\
 	bcopy.$O\
 	bind.$O\
 	connect.$O\
 	endhostent.$O\
 	ffs.$O\
+	gai_strerror.$O\
+	getaddrinfo.$O\
 	getdtablesize.$O\
 	gethostbyname.$O\
 	gethostbyaddr.$O\
 	gethostname.$O\
+	getnameinfo.$O\
 	getopt.$O\
 	getpeername.$O\
+	getprogname.$O\
 	getprotobyname.$O\
 	getservbyaddr.$O\
 	getservbyname.$O\
@@ -22,9 +27,13 @@ OFILES=\
 	gettimeofday.$O\
 	inet_addr.$O\
 	inet_ntoa.$O\
+	inet_ntop.$O\
+	inet_pton.$O\
 	ioctl.$O\
+	ip6const.$O\
 	listen.$O\
 	lstat.$O\
+	mkstemp.$O\
 	mktemp.$O\
 	ntohl.$O\
 	nptohl.$O\
@@ -35,7 +44,9 @@ OFILES=\
 	rresvport.$O\
 	send.$O\
 	sendto.$O\
+	setenv.$O\
 	setlinebuf.$O\
+	setprogname.$O\
 	shutdown.$O\
 	_sock_ingetaddr.$O\
 	_sock_ipattr.$O\
@@ -44,6 +55,7 @@ OFILES=\
 	strncasecmp.$O\
 	socket.$O\
 	socketpair.$O\
+	unsetenv.$O\
 	pty.$O\
 	writev.$O\
 	

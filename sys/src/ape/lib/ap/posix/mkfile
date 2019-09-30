@@ -2,7 +2,10 @@ APE=/sys/src/ape
 <$APE/config
 LIB=/$objtype/lib/ape/libap.a
 OFILES=\
+	basename.$O\
+	dirname.$O\
 	getgrent.$O\
+	getpagesize.$O\
 	getpwent.$O\
 	locale.$O\
 	mkfifo.$O\

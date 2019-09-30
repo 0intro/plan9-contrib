@@ -42,8 +42,13 @@ int _IO_putc(int c, FILE *f){
 			if(f->flags&BALLOC)
 				f->buf=realloc(f->buf, f->bufl+BUFSIZ);
 			else{
-				f->state=ERR;
-				return EOF;
+				/*
+				 * [v]snprintf should return number of characters
+				 * which would have written if enough space had been available.
+				 * however sprintf is not.
+				 */
+				f->state=WR;
+				return c&0xff;
 			}
 			if(f->buf==NULL){
 				f->state=ERR;

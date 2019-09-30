@@ -9,6 +9,7 @@ OFILES=\
 	_exit.$O\
 	_fdinfo.$O\
 	_getpw.$O\
+	_init.$O\
 	_nap.$O\
 	9mallocz.$O\
 	9iounit.$O\
@@ -23,6 +24,7 @@ OFILES=\
 	chdir.$O\
 	chmod.$O\
 	chown.$O\
+	clock_gettime.$O\
 	close.$O\
 	convM2D.$O\
 	convD2M.$O\
@@ -40,6 +42,7 @@ OFILES=\
 	execv.$O\
 	execve.$O\
 	execvp.$O\
+	fchdir.$O\
 	fcntl.$O\
 	fork.$O\
 	frexp.$O\
@@ -52,11 +55,13 @@ OFILES=\
 	getgrnam.$O\
 	getgroups.$O\
 	getlogin.$O\
+	getpgid.$O\
 	getpgrp.$O\
 	getpid.$O\
 	getppid.$O\
 	getpwnam.$O\
 	getpwuid.$O\
+	getrusage.$O\
 	getuid.$O\
 	isatty.$O\
 	kill.$O\
@@ -69,6 +74,7 @@ OFILES=\
 	opendir.$O\
 	pause.$O\
 	pipe.$O\
+	poll.$O\
 	profile.$O\
 	qlock.$O\
 	read.$O\
@@ -85,6 +91,7 @@ OFILES=\
 	sleep.$O\
 	sqrt.$O\
 	stat.$O\
+	syslog.$O\
 	system.$O\
 	tcgetattr.$O\
 	time.$O\

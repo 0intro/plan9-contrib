@@ -7,6 +7,10 @@
 
 #pragma lib "/$M/lib/ape/libbsd.a"
 
+typedef int socklen_t;
+typedef unsigned short sa_family_t;
+typedef unsigned short in_port_t;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -170,6 +174,15 @@ struct msghdr {
 #define	MSG_DONTROUTE	0x4		/* send without using routing tables */
 
 #define	MSG_MAXIOVLEN	16
+
+#define	TCP_NODELAY	1
+#define	TCP_MAXSEG	2
+
+enum {
+	SHUT_RD,	/* no more receptions */
+	SHUT_WR,	/* no more transmissions */
+	SHUT_RDWR,	/* no more receptions or transmissions */
+};
 
 extern int accept(int, void *, int *);
 extern int bind(int, void *, int);
